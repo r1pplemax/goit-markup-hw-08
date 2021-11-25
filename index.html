@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>goit-markup-hw-08</title>
+    <title>WebStudio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -23,7 +23,7 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a class="header-logo" href="./index.html"
+        <a class="header__logo" href="./index.html"
           >Web<span class="header-logo_dark">Studio</span></a
         >
         <nav class="header-nav">
@@ -45,7 +45,7 @@
           <li class="header-contact__item">
             <a class="header-contact__link" href="mailto:info@devstudio.com">
               <svg class="header-contact__icon" width="16" height="12">
-                <use href="./img/icons/sprite/sprite.svg#icon-mail"></use>
+                <use href="./images/icons/sprite/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -57,15 +57,15 @@
                 width="10"
                 height="16"
               >
-                <use href="./img/icons/sprite/sprite.svg#icon-phone"></use>
+                <use href="./images/icons/sprite/sprite.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
-        <button class="mobile-button" type="button" data-menu-open>
+        <button class="mobile-btn" type="button" data-menu-open>
           <svg class="mobile-button__icon" width="40" height="40">
-            <use href="./img/icons/sprite/sprite.svg#icon-burger"></use>
+            <use href="./images/icons/sprite/sprite.svg#icon-burger"></use>
           </svg>
         </button>
         <div class="mobile" data-menu>
@@ -110,8 +110,8 @@
               <a class="mobile-social__link" href="">LinkedIn</a>
             </li>
           </ul>
-          <button class="mobile-button-close" type="button" data-menu-close>
-            <svg class="mobile-button-close__icon" width="40" height="40">
+          <button class="mobile-btn-close" type="button" data-menu-close>
+            <svg class="mobile-btn-close__icon" width="40" height="40">
               <use
                 href="./images/icons/sprite/sprite.svg#icon-mobile-close"
               ></use>
@@ -124,7 +124,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero__button" data-modal-open>
+          <button type="button" class="hero__btn" data-modal-open>
             <span>Заказать услугу</span>
           </button>
         </div>
@@ -150,7 +150,7 @@
             <li class="advantage__item">
               <div class="advantage__box">
                 <svg class="advantage__icon">
-                  <use href="./img/icons/sprite/sprite.svg#icon-clock"></use>
+                  <use href="./images/icons/sprite/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="advantage__title">Пунктуальность</h3>
@@ -162,7 +162,9 @@
             <li class="advantage__item">
               <div class="advantage__box">
                 <svg class="advantage__icon">
-                  <use href="./img/icons/sprite/sprite.svg#icon-diagram"></use>
+                  <use
+                    href="./images/icons/sprite/sprite.svg#icon-diagram"
+                  ></use>
                 </svg>
               </div>
               <h3 class="advantage__title">Планирование</h3>
@@ -175,7 +177,7 @@
               <div class="advantage__box">
                 <svg class="advantage__icon">
                   <use
-                    href="./img/icons/sprite/sprite.svg#icon-astronaut"
+                    href="./images/icons/sprite/sprite.svg#icon-astronaut"
                   ></use>
                 </svg>
               </div>
@@ -191,82 +193,79 @@
       <section class="section section--display-none">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
-          <ul class="whatWeDo">
-            <li class="whatWeDo__item">
+          <ul class="specification">
+            <li class="specification__item">
               <picture>
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/whatWeDo/whatWeDo-1/whatWeDo-1-desktop.webp    1x,
-                    ./img/whatWeDo/whatWeDo-1/whatWeDo-1-desktop@2x.webp 2x,
-                    ./img/whatWeDo/whatWeDo-1/whatWeDo-1-desktop@3x.webp 3x
+                    ./images/specification/specification-1/specification-1-desktop.webp    1x,
+                    ./images/specification/specification-1/specification-1-desktop@2x.webp 2x,
+                    ./images/specification/specification-1/specification-1-desktop@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/whatWeDo/whatWeDo-1/whatWeDo-1-desktop.jpg    1x,
-                    ./img/whatWeDo/whatWeDo-1/whatWeDo-1-desktop@2x.jpg 2x,
-                    ./img/whatWeDo/whatWeDo-1/whatWeDo-1-desktop@3x.jpg 3x
+                    ./images/specification/specification-1/specification-1-desktop.jpg    1x,
+                    ./images/specification/specification-1/specification-1-desktop@2x.jpg 2x,
+                    ./images/specification/specification-1/specification-1-desktop@3x.jpg 3x
                   "
                 />
-                <img src="#" alt="whatWeDo-1" />
+                <img src="#" alt="specification-1" />
               </picture>
-              <p class="whatWeDo__text">Десктопные приложения</p>
+              <p class="specification__text">Десктопные приложения</p>
             </li>
-            <li class="whatWeDo__item">
+            <li class="specification__item">
               <picture>
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/whatWeDo/whatWeDo-2/whatWeDo-2-desktop.webp    1x,
-                    ./img/whatWeDo/whatWeDo-2/whatWeDo-2-desktop@2x.webp 2x,
-                    ./img/whatWeDo/whatWeDo-2/whatWeDo-2-desktop@3x.webp 3x
+                    ./images/specification/specification-2/specification-2-desktop.webp    1x,
+                    ./images/specification/specification-2/specification-2-desktop@2x.webp 2x,
+                    ./images/specification/specification-2/specification-2-desktop@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/whatWeDo/whatWeDo-2/whatWeDo-2-desktop.jpg    1x,
-                    ./img/whatWeDo/whatWeDo-2/whatWeDo-2-desktop@2x.jpg 2x,
-                    ./img/whatWeDo/whatWeDo-2/whatWeDo-2-desktop@3x.jpg 3x
+                    ./images/specification/specification-2/specification-2-desktop.jpg    1x,
+                    ./images/specification/specification-2/specification-2-desktop@2x.jpg 2x,
+                    ./images/specification/specification-2/specification-2-desktop@3x.jpg 3x
                   "
                 />
-                <img src="#" alt="whatWeDo-2" />
+                <img src="#" alt="specification-2" />
               </picture>
-              <p class="whatWeDo__text">Мобильные приложения</p>
+              <p class="specification__text">Мобильные приложения</p>
             </li>
-            <li class="whatWeDo__item">
+            <li class="specification__item">
               <picture>
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/whatWeDo/whatWeDo-3/whatWeDo-3-desktop.webp    1x,
-                    ./img/whatWeDo/whatWeDo-3/whatWeDo-3-desktop@2x.webp 2x,
-                    ./img/whatWeDo/whatWeDo-3/whatWeDo-3-desktop@3x.webp 3x
+                    ./images/specification/specification-3/specification-3-desktop.webp    1x,
+                    ./images/specification/specification-3/specification-3-desktop@2x.webp 2x,
+                    ./images/specification/specification-3/specification-3-desktop@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/whatWeDo/whatWeDo-3/whatWeDo-3-desktop.jpg    1x,
-                    ./img/whatWeDo/whatWeDo-3/whatWeDo-3-desktop@2x.jpg 2x,
-                    ./img/whatWeDo/whatWeDo-3/whatWeDo-3-desktop@3x.jpg 3x
+                    ./images/specification/specification-3/specification-3-desktop.jpg    1x,
+                    ./images/specification/specification-3/specification-3-desktop@2x.jpg 2x,
+                    ./images/specification/specification-3/specification-3-desktop@3x.jpg 3x
                   "
                 />
-                <img src="#" alt="whatWeDo-3" />
+                <img src="#" alt="specification-3" />
               </picture>
-              <p class="whatWeDo__text">Дизайнерские решения</p>
+              <p class="specification__text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
-        <!-- container -->
       </section>
-      <!-- section -->
-      <!-- team -->
       <section class="section section__background">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
@@ -276,52 +275,52 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/team/teammate-1/desktop/teammate-1-desktop.webp    1x,
-                    ./img/team/teammate-1/desktop/teammate-1-desktop@2x.webp 2x,
-                    ./img/team/teammate-1/desktop/teammate-1-desktop@3x.webp 3x
+                    ./images/team/teammate-1/desktop/teammate-1-desktop.webp    1x,
+                    ./images/team/teammate-1/desktop/teammate-1-desktop@2x.webp 2x,
+                    ./images/team/teammate-1/desktop/teammate-1-desktop@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/team/teammate-1/desktop/teammate-1-desktop.jpg    1x,
-                    ./img/team/teammate-1/desktop/teammate-1-desktop@2x.jpg 2x,
-                    ./img/team/teammate-1/desktop/teammate-1-desktop@3x.jpg 3x
+                    ./images/team/teammate-1/desktop/teammate-1-desktop.jpg    1x,
+                    ./images/team/teammate-1/desktop/teammate-1-desktop@2x.jpg 2x,
+                    ./images/team/teammate-1/desktop/teammate-1-desktop@3x.jpg 3x
                   "
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./img/team/teammate-1/tablet/teammate-1-tablet.webp    1x,
-                    ./img/team/teammate-1/tablet/teammate-1-tablet@2x.webp 2x,
-                    ./img/team/teammate-1/tablet/teammate-1-tablet@3x.webp 3x
+                    ./images/team/teammate-1/tablet/teammate-1-tablet.webp    1x,
+                    ./images/team/teammate-1/tablet/teammate-1-tablet@2x.webp 2x,
+                    ./images/team/teammate-1/tablet/teammate-1-tablet@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./img/team/teammate-1/tablet/teammate-1-tablet.jpg    1x,
-                    ./img/team/teammate-1/tablet/teammate-1-tablet@2x.jpg 2x,
-                    ./img/team/teammate-1/tablet/teammate-1-tablet@3x.jpg 3x
+                    ./images/team/teammate-1/tablet/teammate-1-tablet.jpg    1x,
+                    ./images/team/teammate-1/tablet/teammate-1-tablet@2x.jpg 2x,
+                    ./images/team/teammate-1/tablet/teammate-1-tablet@3x.jpg 3x
                   "
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="
-                    ./img/team/teammate-1/mobile/teammate-1-mobile.webp    1x,
-                    ./img/team/teammate-1/mobile/teammate-1-mobile@2x.webp 2x,
-                    ./img/team/teammate-1/mobile/teammate-1-mobile@3x.webp 3x
+                    ./images/team/teammate-1/mobile/teammate-1-mobile.webp    1x,
+                    ./images/team/teammate-1/mobile/teammate-1-mobile@2x.webp 2x,
+                    ./images/team/teammate-1/mobile/teammate-1-mobile@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="
-                    ./img/team/teammate-1/mobile/teammate-1-mobile.jpg    1x,
-                    ./img/team/teammate-1/mobile/teammate-1-mobile@2x.jpg 2x,
-                    ./img/team/teammate-1/mobile/teammate-1-mobile@3x.jpg 3x
+                    ./images/team/teammate-1/mobile/teammate-1-mobile.jpg    1x,
+                    ./images/team/teammate-1/mobile/teammate-1-mobile@2x.jpg 2x,
+                    ./images/team/teammate-1/mobile/teammate-1-mobile@3x.jpg 3x
                   "
                 />
                 <img src="#" alt="teammate-1" />
@@ -334,7 +333,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-instagram"
+                          href="./images/icons/sprite/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
@@ -343,7 +342,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-twitter"
+                          href="./images/icons/sprite/sprite.svg#icon-twitter"
                         ></use>
                       </svg>
                     </a>
@@ -352,7 +351,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-facebook"
+                          href="./images/icons/sprite/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
@@ -361,7 +360,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-linkedin"
+                          href="./images/icons/sprite/sprite.svg#icon-linkedin"
                         ></use>
                       </svg>
                     </a>
@@ -374,52 +373,52 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/team/teammate-2/desktop/teammate-2-desktop.webp    1x,
-                    ./img/team/teammate-2/desktop/teammate-2-desktop@2x.webp 2x,
-                    ./img/team/teammate-2/desktop/teammate-2-desktop@3x.webp 3x
+                    ./images/team/teammate-2/desktop/teammate-2-desktop.webp    1x,
+                    ./images/team/teammate-2/desktop/teammate-2-desktop@2x.webp 2x,
+                    ./images/team/teammate-2/desktop/teammate-2-desktop@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/team/teammate-2/desktop/teammate-2-desktop.jpg    1x,
-                    ./img/team/teammate-2/desktop/teammate-2-desktop@2x.jpg 2x,
-                    ./img/team/teammate-2/desktop/teammate-2-desktop@3x.jpg 3x
+                    ./images/team/teammate-2/desktop/teammate-2-desktop.jpg    1x,
+                    ./images/team/teammate-2/desktop/teammate-2-desktop@2x.jpg 2x,
+                    ./images/team/teammate-2/desktop/teammate-2-desktop@3x.jpg 3x
                   "
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./img/team/teammate-2/tablet/teammate-2-tablet.webp    1x,
-                    ./img/team/teammate-2/tablet/teammate-2-tablet@2x.webp 2x,
-                    ./img/team/teammate-2/tablet/teammate-2-tablet@3x.webp 3x
+                    ./images/team/teammate-2/tablet/teammate-2-tablet.webp    1x,
+                    ./images/team/teammate-2/tablet/teammate-2-tablet@2x.webp 2x,
+                    ./images/team/teammate-2/tablet/teammate-2-tablet@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./img/team/teammate-2/tablet/teammate-2-tablet.jpg    1x,
-                    ./img/team/teammate-2/tablet/teammate-2-tablet@2x.jpg 2x,
-                    ./img/team/teammate-2/tablet/teammate-2-tablet@3x.jpg 3x
+                    ./images/team/teammate-2/tablet/teammate-2-tablet.jpg    1x,
+                    ./images/team/teammate-2/tablet/teammate-2-tablet@2x.jpg 2x,
+                    ./images/team/teammate-2/tablet/teammate-2-tablet@3x.jpg 3x
                   "
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="
-                    ./img/team/teammate-2/mobile/teammate-2-mobile.webp    1x,
-                    ./img/team/teammate-2/mobile/teammate-2-mobile@2x.webp 2x,
-                    ./img/team/teammate-2/mobile/teammate-2-mobile@3x.webp 3x
+                    ./images/team/teammate-2/mobile/teammate-2-mobile.webp    1x,
+                    ./images/team/teammate-2/mobile/teammate-2-mobile@2x.webp 2x,
+                    ./images/team/teammate-2/mobile/teammate-2-mobile@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="
-                    ./img/team/teammate-2/mobile/teammate-2-mobile.jpg    1x,
-                    ./img/team/teammate-2/mobile/teammate-2-mobile@2x.jpg 2x,
-                    ./img/team/teammate-2/mobile/teammate-2-mobile@3x.jpg 3x
+                    ./images/team/teammate-2/mobile/teammate-2-mobile.jpg    1x,
+                    ./images/team/teammate-2/mobile/teammate-2-mobile@2x.jpg 2x,
+                    ./images/team/teammate-2/mobile/teammate-2-mobile@3x.jpg 3x
                   "
                 />
                 <img src="#" alt="teammate-2" />
@@ -432,7 +431,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-instagram"
+                          href="./images/icons/sprite/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
@@ -441,7 +440,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-twitter"
+                          href="./images/icons/sprite/sprite.svg#icon-twitter"
                         ></use>
                       </svg>
                     </a>
@@ -450,7 +449,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-facebook"
+                          href="./images/icons/sprite/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
@@ -459,7 +458,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-linkedin"
+                          href="./images/icons/sprite/sprite.svg#icon-linkedin"
                         ></use>
                       </svg>
                     </a>
@@ -472,52 +471,52 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/team/teammate-3/desktop/teammate-3-desktop.webp    1x,
-                    ./img/team/teammate-3/desktop/teammate-3-desktop@2x.webp 2x,
-                    ./img/team/teammate-3/desktop/teammate-3-desktop@3x.webp 3x
+                    ./images/team/teammate-3/desktop/teammate-3-desktop.webp    1x,
+                    ./images/team/teammate-3/desktop/teammate-3-desktop@2x.webp 2x,
+                    ./images/team/teammate-3/desktop/teammate-3-desktop@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/team/teammate-3/desktop/teammate-3-desktop.jpg    1x,
-                    ./img/team/teammate-3/desktop/teammate-3-desktop@2x.jpg 2x,
-                    ./img/team/teammate-3/desktop/teammate-3-desktop@3x.jpg 3x
+                    ./images/team/teammate-3/desktop/teammate-3-desktop.jpg    1x,
+                    ./images/team/teammate-3/desktop/teammate-3-desktop@2x.jpg 2x,
+                    ./images/team/teammate-3/desktop/teammate-3-desktop@3x.jpg 3x
                   "
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./img/team/teammate-3/tablet/teammate-3-tablet.webp    1x,
-                    ./img/team/teammate-3/tablet/teammate-3-tablet@2x.webp 2x,
-                    ./img/team/teammate-3/tablet/teammate-3-tablet@3x.webp 3x
+                    ./images/team/teammate-3/tablet/teammate-3-tablet.webp    1x,
+                    ./images/team/teammate-3/tablet/teammate-3-tablet@2x.webp 2x,
+                    ./images/team/teammate-3/tablet/teammate-3-tablet@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./img/team/teammate-3/tablet/teammate-3-tablet.jpg    1x,
-                    ./img/team/teammate-3/tablet/teammate-3-tablet@2x.jpg 2x,
-                    ./img/team/teammate-3/tablet/teammate-3-tablet@3x.jpg 3x
+                    ./images/team/teammate-3/tablet/teammate-3-tablet.jpg    1x,
+                    ./images/team/teammate-3/tablet/teammate-3-tablet@2x.jpg 2x,
+                    ./images/team/teammate-3/tablet/teammate-3-tablet@3x.jpg 3x
                   "
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="
-                    ./img/team/teammate-3/mobile/teammate-3-mobile.webp    1x,
-                    ./img/team/teammate-3/mobile/teammate-3-mobile@2x.webp 2x,
-                    ./img/team/teammate-3/mobile/teammate-3-mobile@3x.webp 3x
+                    ./images/team/teammate-3/mobile/teammate-3-mobile.webp    1x,
+                    ./images/team/teammate-3/mobile/teammate-3-mobile@2x.webp 2x,
+                    ./images/team/teammate-3/mobile/teammate-3-mobile@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="
-                    ./img/team/teammate-3/mobile/teammate-3-mobile.jpg    1x,
-                    ./img/team/teammate-3/mobile/teammate-3-mobile@2x.jpg 2x,
-                    ./img/team/teammate-3/mobile/teammate-3-mobile@3x.jpg 3x
+                    ./images/team/teammate-3/mobile/teammate-3-mobile.jpg    1x,
+                    ./images/team/teammate-3/mobile/teammate-3-mobile@2x.jpg 2x,
+                    ./images/team/teammate-3/mobile/teammate-3-mobile@3x.jpg 3x
                   "
                 />
                 <img src="#" alt="teammate-3" />
@@ -530,7 +529,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-instagram"
+                          href="./images/icons/sprite/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
@@ -539,7 +538,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-twitter"
+                          href="./images/icons/sprite/sprite.svg#icon-twitter"
                         ></use>
                       </svg>
                     </a>
@@ -548,7 +547,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-facebook"
+                          href="./images/icons/sprite/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
@@ -557,7 +556,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-linkedin"
+                          href="./images/icons/sprite/sprite.svg#icon-linkedin"
                         ></use>
                       </svg>
                     </a>
@@ -570,52 +569,52 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/team/teammate-4/desktop/teammate-4-desktop.webp    1x,
-                    ./img/team/teammate-4/desktop/teammate-4-desktop@2x.webp 2x,
-                    ./img/team/teammate-4/desktop/teammate-4-desktop@3x.webp 3x
+                    ./images/team/teammate-4/desktop/teammate-4-desktop.webp    1x,
+                    ./images/team/teammate-4/desktop/teammate-4-desktop@2x.webp 2x,
+                    ./images/team/teammate-4/desktop/teammate-4-desktop@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./img/team/teammate-4/desktop/teammate-4-desktop.jpg    1x,
-                    ./img/team/teammate-4/desktop/teammate-4-desktop@2x.jpg 2x,
-                    ./img/team/teammate-4/desktop/teammate-4-desktop@3x.jpg 3x
+                    ./images/team/teammate-4/desktop/teammate-4-desktop.jpg    1x,
+                    ./images/team/teammate-4/desktop/teammate-4-desktop@2x.jpg 2x,
+                    ./images/team/teammate-4/desktop/teammate-4-desktop@3x.jpg 3x
                   "
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./img/team/teammate-4/tablet/teammate-4-tablet.webp    1x,
-                    ./img/team/teammate-4/tablet/teammate-4-tablet@2x.webp 2x,
-                    ./img/team/teammate-4/tablet/teammate-4-tablet@3x.webp 3x
+                    ./images/team/teammate-4/tablet/teammate-4-tablet.webp    1x,
+                    ./images/team/teammate-4/tablet/teammate-4-tablet@2x.webp 2x,
+                    ./images/team/teammate-4/tablet/teammate-4-tablet@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./img/team/teammate-4/tablet/teammate-4-tablet.jpg    1x,
-                    ./img/team/teammate-4/tablet/teammate-4-tablet@2x.jpg 2x,
-                    ./img/team/teammate-4/tablet/teammate-4-tablet@3x.jpg 3x
+                    ./images/team/teammate-4/tablet/teammate-4-tablet.jpg    1x,
+                    ./images/team/teammate-4/tablet/teammate-4-tablet@2x.jpg 2x,
+                    ./images/team/teammate-4/tablet/teammate-4-tablet@3x.jpg 3x
                   "
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="
-                    ./img/team/teammate-4/mobile/teammate-4-mobile.webp    1x,
-                    ./img/team/teammate-4/mobile/teammate-4-mobile@2x.webp 2x,
-                    ./img/team/teammate-4/mobile/teammate-4-mobile@3x.webp 3x
+                    ./images/team/teammate-4/mobile/teammate-4-mobile.webp    1x,
+                    ./images/team/teammate-4/mobile/teammate-4-mobile@2x.webp 2x,
+                    ./images/team/teammate-4/mobile/teammate-4-mobile@3x.webp 3x
                   "
                   type="image/webp"
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="
-                    ./img/team/teammate-4/mobile/teammate-4-mobile.jpg    1x,
-                    ./img/team/teammate-4/mobile/teammate-4-mobile@2x.jpg 2x,
-                    ./img/team/teammate-4/mobile/teammate-4-mobile@3x.jpg 3x
+                    ./images/team/teammate-4/mobile/teammate-4-mobile.jpg    1x,
+                    ./images/team/teammate-4/mobile/teammate-4-mobile@2x.jpg 2x,
+                    ./images/team/teammate-4/mobile/teammate-4-mobile@3x.jpg 3x
                   "
                 />
                 <img src="#" alt="teammate-4" />
@@ -628,7 +627,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-instagram"
+                          href="./images/icons/sprite/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
@@ -637,7 +636,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-twitter"
+                          href="./images/icons/sprite/sprite.svg#icon-twitter"
                         ></use>
                       </svg>
                     </a>
@@ -646,7 +645,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-facebook"
+                          href="./images/icons/sprite/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
@@ -655,7 +654,7 @@
                     <a class="social__link" href="">
                       <svg class="social__icon">
                         <use
-                          href="./img/icons/sprite/sprite.svg#icon-linkedin"
+                          href="./images/icons/sprite/sprite.svg#icon-linkedin"
                         ></use>
                       </svg>
                     </a>
@@ -671,56 +670,65 @@
       <section class="section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
-          <ul class="clients">
-            <li class="clients-list__item">
-              <a class="clients-list__link" href="">
-                <svg class="clients-list__icon">
-                  <use href="./img/icons/sprite/sprite.svg#icon-client-1"></use>
+          <ul class="customers">
+            <li class="customers-list__item">
+              <a class="customers-list__link" href="">
+                <svg class="customers-list__icon">
+                  <use
+                    href="./images/icons/sprite/sprite.svg#icon-client-1"
+                  ></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
-              <a class="clients-list__link" href="">
-                <svg class="clients-list__icon">
-                  <use href="./img/icons/sprite/sprite.svg#icon-client-2"></use>
+            <li class="customers-list__item">
+              <a class="customers-list__link" href="">
+                <svg class="customers-list__icon">
+                  <use
+                    href="./images/icons/sprite/sprite.svg#icon-client-2"
+                  ></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
-              <a class="clients-list__link" href="">
-                <svg class="clients-list__icon">
-                  <use href="./img/icons/sprite/sprite.svg#icon-client-3"></use>
+            <li class="customers-list__item">
+              <a class="customers-list__link" href="">
+                <svg class="customers-list__icon">
+                  <use
+                    href="./images/icons/sprite/sprite.svg#icon-client-3"
+                  ></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
-              <a class="clients-list__link" href="">
-                <svg class="clients-list__icon">
-                  <use href="./img/icons/sprite/sprite.svg#icon-client-4"></use>
+            <li class="customers-list__item">
+              <a class="customers-list__link" href="">
+                <svg class="customers-list__icon">
+                  <use
+                    href="./images/icons/sprite/sprite.svg#icon-client-4"
+                  ></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
-              <a class="clients-list__link" href="">
-                <svg class="clients-list__icon">
-                  <use href="./img/icons/sprite/sprite.svg#icon-client-5"></use>
+            <li class="customers-list__item">
+              <a class="customers-list__link" href="">
+                <svg class="customers-list__icon">
+                  <use
+                    href="./images/icons/sprite/sprite.svg#icon-client-5"
+                  ></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list__item">
-              <a class="clients-list__link" href="">
-                <svg class="clients-list__icon">
-                  <use href="./img/icons/sprite/sprite.svg#icon-client-6"></use>
+            <li class="customers-list__item">
+              <a class="customers-list__link" href="">
+                <svg class="customers-list__icon">
+                  <use
+                    href="./images/icons/sprite/sprite.svg#icon-client-6"
+                  ></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <!-- container -->
       </section>
-      <!-- section -->
     </main>
-    <!-- footer -->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-info">
@@ -757,7 +765,7 @@
               <a class="social__link social__link--background-gray" href="">
                 <svg class="social__icon social__icon--white">
                   <use
-                    href="./img/icons/sprite/sprite.svg#icon-instagram"
+                    href="./images/icons/sprite/sprite.svg#icon-instagram"
                   ></use>
                 </svg>
               </a>
@@ -765,21 +773,27 @@
             <li class="social__item">
               <a class="social__link social__link--background-gray" href="">
                 <svg class="social__icon social__icon--white">
-                  <use href="./img/icons/sprite/sprite.svg#icon-twitter"></use>
+                  <use
+                    href="./images/icons/sprite/sprite.svg#icon-twitter"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--background-gray" href="">
                 <svg class="social__icon social__icon--white">
-                  <use href="./img/icons/sprite/sprite.svg#icon-facebook"></use>
+                  <use
+                    href="./images/icons/sprite/sprite.svg#icon-facebook"
+                  ></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--background-gray" href="">
                 <svg class="social__icon social__icon--white">
-                  <use href="./img/icons/sprite/sprite.svg#icon-linkedin"></use>
+                  <use
+                    href="./images/icons/sprite/sprite.svg#icon-linkedin"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -796,10 +810,12 @@
               id="subscribe-email"
               placeholder="E-mail"
             />
-            <button type="submit" class="subscribe-button">
+            <button type="submit" class="subscribe-btn">
               Подписаться
-              <svg class="subscribe-button__icon">
-                <use href="./img/icons/sprite/sprite.svg#icon-iconsend"></use>
+              <svg class="subscribe-btn__icon">
+                <use
+                  href="./images/icons/sprite/sprite.svg#icon-iconsend"
+                ></use>
               </svg>
             </button>
           </form>
@@ -810,9 +826,9 @@
     <!-- footer -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="button-close" data-modal-close>
-          <svg class="button-close__icon">
-            <use href="./img/icons/sprite/sprite.svg#icon-close"></use>
+        <button type="button" class="btn-close" data-modal-close>
+          <svg class="btn-close__icon">
+            <use href="./images/icons/sprite/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
@@ -826,7 +842,7 @@
               id="user-name"
             />
             <svg class="modal-form__icon">
-              <use href="./img/icons/sprite/sprite.svg#modal-person"></use>
+              <use href="./images/icons/sprite/sprite.svg#modal-person"></use>
             </svg>
           </div>
           <div class="modal-form">
@@ -838,7 +854,7 @@
               id="user-phone"
             />
             <svg class="modal-form__icon">
-              <use href="./img/icons/sprite/sprite.svg#modal-phone"></use>
+              <use href="./images/icons/sprite/sprite.svg#modal-phone"></use>
             </svg>
           </div>
           <div class="modal-form">
@@ -850,7 +866,7 @@
               id="user-email"
             />
             <svg class="modal-form__icon">
-              <use href="./img/icons/sprite/sprite.svg#modal-email"></use>
+              <use href="./images/icons/sprite/sprite.svg#modal-email"></use>
             </svg>
           </div>
           <div class="modal-form">
@@ -872,7 +888,7 @@
               <a href="" class="policy-link">Условия договора</a>
             </label>
           </div>
-          <button class="modal-button" type="submit">Отправить</button>
+          <button class="modal-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
